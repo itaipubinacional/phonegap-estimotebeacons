@@ -33,7 +33,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <service android:name="com.evothings.BeaconsMonitoringService" android:label="Beacons Monitoring Service" />
-            <receiver android:name="com.evothings.BluetoothStateReceiver" android:enabled="true">
+            <receiver android:name="com.evothings.BluetoothStateReceiver" android:enabled="true" android:exported="false">
                 <intent-filter>
                     <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
                 </intent-filter>
